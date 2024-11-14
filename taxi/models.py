@@ -7,7 +7,7 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=100, unique=True)
     country = models.CharField(max_length=100)
 
-    class Mete:
+    class Meta:
         ordering = ("name", )
 
     def __str__(self) -> str:
@@ -27,7 +27,7 @@ class Car(models.Model):
         related_name="cars"
     )
 
-    class Mete:
+    class Meta:
         ordering = ("model", )
 
     def __str__(self) -> str:
